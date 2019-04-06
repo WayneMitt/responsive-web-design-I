@@ -86,7 +86,7 @@ section img {
 	display: flex;
 	flex-direction: column;
 	width: 450px;
-	margin: 10px 20px 30px 0px;
+    padding: 10px 20px 30px 0px;
 }
 
 .bottom {
@@ -243,12 +243,41 @@ ul {
         vertical-align: 100%;
         align-self: center;
     }
-    .middle-image {
-        width: 100%;
-        height: auto;
-    }
-    
     body {
         width: 100%;
+    }
+    section img {
+        width: 100%;
+        height: auto;
+        padding: 0px 20px;
+    }
+    footer {
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .nav-img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    nav a {
+        padding: 15px 0px;
+        border: 1px solid gray;
+        width: 100%;
+        text-align: center;
+    }
+    a:link {
+        color: gray;
     }
 }
